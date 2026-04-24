@@ -9,18 +9,6 @@ A Python/Tkinter-based desktop pet application that lives on your Windows deskto
 - Click and drag to reposition
 - Right-click menu for settings and exit
 
-## Structure
-Make sure you have an `emotion` folder in the same directory as `main.py`. The required structure is:
-```text
-emotion/
-    attack/
-    hurt/
-    idle/
-    jump/
-    run/
-    runningjum/
-    walk/
-```
 Inside each folder, animation frames must be properly sequenced (e.g., `tile000.png`, `tile001.png`, etc.).
 
 ## How to Run Locally
@@ -33,13 +21,7 @@ Inside each folder, animation frames must be properly sequenced (e.g., `tile000.
    python main.py
    ```
 
-## Troubleshooting
-- **If the pet does not appear:** Check the `emotion` folder and ensure all files extracted properly. 
-- **If attack doesn't work:** Check the folder name. It usually prefers `attack` but the system automatically corrects for `actack` if you've misspelled it!
-- **If the animation looks jumpy:** Don't worry! This has been fixed in the latest version. Frames are automatically re-centered and normalized onto a stable `128x128` canvas so the pet doesn't bounce during mismatched frame changes!
-- **How to build:** Run `build_exe.bat`
+<img width="526" height="422" alt="image" src="https://github.com/user-attachments/assets/8b4ab06f-67c1-4e73-af6e-60409d44fac1" />
+   
+<img width="639" height="481" alt="image" src="https://github.com/user-attachments/assets/9be8f307-128c-4c68-8565-cf85483d1925" />
 
-## How to Build Executable (.exe)
-1. Double-click the `build_exe.bat` file.
-2. The compiled executable will be automatically placed in the `dist/` folder named `CuteDesktopPet.exe`.
-3. You can execute `CuteDesktopPet.exe` directly on Windows without needing Python installed.
